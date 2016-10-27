@@ -1,0 +1,71 @@
+# Author: Jackie Xu
+# Date: 11/3/2014
+# Purpose: Turning The Number theory program to have a GUI front end
+#-------------------------------------------------------------------
+
+from tkinter import*
+root = Tk(className = " GUI - Number Theory")
+
+# Declare
+input1 = StringVar()
+input2 = StringVar()
+
+permutations = StringVar()
+combinations = StringVar()
+
+# Init'
+input1.set(value = "10")
+input2.set(value = "5")
+
+permutations.set(value = "0")
+combinations.set(value = "0")
+
+# Input
+
+
+
+# Process
+# Output
+
+def wut():
+    lblPerm.grid(row = 5, column = 0, sticky= W, padx = 10, pady = 5)
+    lblComb.grid(row = 6, column = 0, sticky= W, padx = 10, pady = 5)
+    lblGCD.grid(row = 7, column = 0, sticky= W, padx = 10, pady = 5)
+    lblLCM.grid(row = 8, column = 0, sticky= W, padx = 10, pady = 5)
+
+
+def watt():
+
+    
+    lblPerm.grid_remove()
+    lblComb.grid_remove()
+    lblGCD.grid_remove()
+    lblLCM.grid_remove()
+    wAt()
+
+def wAt():
+    print("WUUt:")
+    wAat()
+
+def wAat():
+    print ("WUUt:")
+    wAt()
+    
+#GUI
+
+Label(root,text = "Number Theory GUI").grid(row = 0, column = 0, sticky= W, padx = 10, pady = 5)
+Label(root,text = "Integer 1: ").grid(row = 1, column = 0, sticky= W, padx = 10, pady = 5)
+Label(root,text = "Integer 2: ").grid(row = 2, column = 0, sticky= W, padx = 10, pady = 5)
+
+Entry(root,text = input1).grid(row = 1, column = 1,sticky= W,padx = 10, pady = 5)
+Entry(root,text = input2).grid(row = 2, column = 1,sticky= W,padx = 10, pady = 5)
+
+lblPerm = Label(root,text = "Permutations")
+lblComb = Label(root,text = "Combinations")
+lblGCD = Label(root,text = "Greatest Common Factor")
+lblLCM = Label(root,text = "Least Common Multiple")
+
+Button(root,text = "Calculate", width = 10,height = 1,command = lambda:wut()).grid(row = 4, column = 0,sticky= W,padx = 10, pady = 5)
+Button(root,text = "Clear", width = 10,height = 1,command = lambda:watt()).grid(row = 4, column = 1,sticky= W,padx = 10, pady = 5)
+
+mainloop()

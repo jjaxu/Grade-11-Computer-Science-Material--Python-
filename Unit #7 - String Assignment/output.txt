@@ -1,0 +1,7 @@
+Hi  my  name  is Jackie. I am awesome. It took me a while to 
+figure  out  exactly  how  to  read text from files. After a 
+while  of  struggling,  I  finally  realized  why everything 
+didn't  work  at  first,  I  forgot  to  put  in "self" as a 
+parameter  in my method, how silly. After getting the method 
+to  work,  I began to write this long and useless note about 
+my strings, and I think I am going to stop now. 
