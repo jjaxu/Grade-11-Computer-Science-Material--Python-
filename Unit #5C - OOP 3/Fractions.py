@@ -5,6 +5,8 @@
 
 import random
 from tkinter import*
+import winsound
+
 
 root = Tk(className = " Fractions")
 root.config(width = 800, height = 600)
@@ -511,6 +513,8 @@ cmdCorrect = Button(window, text = "Correct", width = 10, font = ("Calibri","24"
 cmdWrong = Button(window, text = "Wrong", width = 10, font = ("Calibri","24","bold"),command = lambda: check(answer = False))
 cmdNext = Button(window, text = "Next question", width = 16, font = ("Calibri","24","bold"),command = lambda: go())
 
+winsound.PlaySound('Jackie_Blues.wav',
+                   winsound.SND_FILENAME|winsound.SND_ASYNC)
 mainloop()
 
 
